@@ -357,7 +357,7 @@ void hapus_data()
         return;
     }
 
-    // menulis kembali semua file setelah edit
+    // menulis kembali semua file setelah dihapus
     for (int i = 0; i < jml_data_input; i++)
     {
         fprintf(file, "nik: %d\n", (ptr + i)->nik);
