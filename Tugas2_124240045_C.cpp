@@ -12,9 +12,6 @@ struct node
     node *next;
 };
 
-// untuk stack:
-// depan = awal
-// belakang = top
 node *depan = nullptr, *belakang = nullptr;
 node *top = nullptr;
 
@@ -43,7 +40,7 @@ bool stackKosong()
     return depan == nullptr;
 }
 
-// queue
+// pakai queue untuk tambah antrean pesanan
 void tambahPesanan(string namaPelanggan, string jenisRoti, int hargaRoti)
 {
     node *NB = new node;
