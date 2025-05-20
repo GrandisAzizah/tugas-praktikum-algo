@@ -12,9 +12,6 @@ struct node
     node *next;
 };
 
-// untuk stack:
-// depan = awal
-// belakang = top
 node *depan = nullptr, *belakang = nullptr;
 node *top = nullptr;
 
