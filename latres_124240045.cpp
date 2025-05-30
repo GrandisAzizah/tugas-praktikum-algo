@@ -144,7 +144,6 @@ PtbNode *search(PtbNode *root, string target)
         string curr_judul_lc = to_lowercase(curr->judul);
         if (curr_judul_lc == target)
         {
-            // cout << curr->judul << " ditemukan." << endl;
             return curr;
         }
         curr = (target < curr_judul_lc) ? curr->left : curr->right;
