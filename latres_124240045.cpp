@@ -278,26 +278,6 @@ void tontonVideo()
     delete video;
 }
 
-// ini sebelum masuk ke riwayat
-void video_telah_diputar()
-{
-    if (queueKosong())
-    {
-        cout << "Tidak ada video yang dapat diputar." << endl;
-        return;
-    }
-    PtbNode *bantu = depan;
-    string val = bantu->judul;
-    string val1 = bantu->durasi;
-    string val2 = bantu->status;
-
-    riwayatTontonan(val, val1, val2);
-
-    // hapus dari queue
-    depan = depan->right;
-    delete bantu;
-}
-
 // tampilkan riwayat
 void tampilkanRiwayat()
 {
